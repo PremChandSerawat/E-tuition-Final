@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.modal.Course" table="Course">
+<id name="id">
+<generator class="increment" />
+</id>
+<property name="studentName" type="string" length="200" not-null="true" />
+<property name="sUmail" type="string" length="200" not-null="true" />
+<property name="fUmail" type="string" length="200" not-null="true" />
+<property name="faculty" type="string" length="200" not-null="true"/>
+<property name="course" type="string" length="50" not-null="true" />
+<property name="strDate" type="date" />
+    </class>
+</hibernate-mapping>

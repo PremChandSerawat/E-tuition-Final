@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd"> 
+<hibernate-mapping>
+<class name="com.modal.Question" table="question">
+<id name="id" type="int">  
+<generator class="increment"></generator>  
+</id> 
+<property name="question" type="string" length="500"/>
+<property name="optionA" type="string" length="100"/>
+<property name="optionB" type="string" length="100"/>
+<property name="optionC" type="string" length="100"/>
+<property name="optionD" type="string" length="100"/>
+<property name="rightAnswer" type="string" length="2"/>
+<property name="faculty" type="string" length="100"/>
+<property name="subject" type="string" length="100"/>
+</class>
+</hibernate-mapping>
